@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System - Reservations</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto">
+            <a href="home-admin.html" class="text-white font-bold text-xl">Hotel Management System</a>
+            <ul class="flex space-x-4 text-white ml-auto">
+                <li><a href="rooms-admin.html">Rooms</a></li>
+                <li><a href="reservations-admin.html">Reservations</a></li>
+                <li><a href="customers-admin.html">Customers</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="services-admin.html">Services</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="logs.html">Logs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Reservation Management Section -->
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6">Reservation Management</h1>
+            <table class="w-full bg-white shadow-lg">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-100">Reservation ID</th>
+                        <th class="py-2 px-4 bg-gray-100">Customer Name</th>
+                        <th class="py-2 px-4 bg-gray-100">Room Number</th>
+                        <th class="py-2 px-4 bg-gray-100">Check-in</th>
+                        <th class="py-2 px-4 bg-gray-100">Check-out</th>
+                        <th class="py-2 px-4 bg-gray-100">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Repeat for each reservation -->
+                    <tr>
+                        <td class="py-2 px-4">R001</td>
+                        <td class="py-2 px-4">John Doe</td>
+                        <td class="py-2 px-4">101</td>
+                        <td class="py-2 px-4">10/10/2024</td>
+                        <td class="py-2 px-4">10/15/2024</td>
+                        <td class="py-2 px-4">
+                            <button class="bg-green-500 text-white px-2 py-1">Edit</button>
+                            <button class="bg-red-500 text-white px-2 py-1">Cancel</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>

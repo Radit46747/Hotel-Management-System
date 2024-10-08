@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Activities</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto">
+            <a href="home-admin.html" class="text-white font-bold text-xl">Hotel Management System</a>
+            <ul class="flex space-x-4 text-white ml-auto">
+                <li><a href="rooms-admin.html">Rooms</a></li>
+                <li><a href="reservations-admin.html">Reservations</a></li>
+                <li><a href="customers-admin.html">Customers</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="services-admin.html">Services</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="logs.html">Logs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-xl">Log Activities</h1>
+    </header>
+    <main class="p-4">
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border px-1 py-2">Date</th>
+                    <th class="border px-1 py-2">Activity</th>
+                    <th class="border px-1 py-2">Details</th>
+                </tr>
+            </thead>
+            <tbody id="activity-log">
+                <tr>
+                    <td class="border pl-1 py-2">10/8/2024</td>
+                    <td class="border pl-1 py-2">Reservation</td>
+                    <td class="border pl-1 py-2">Someone reservated room 101</td>
+                </tr>
+                <!-- Activity log entries will be added here dynamically -->
+            </tbody>
+        </table>
+        <form id="activity-form" class="mt-4">
+            <input type="text" id="activity" placeholder="Activity" class="border px-2 py-1" required>
+            <input type="text" id="details" placeholder="Details" class="border px-2 py-1" required>
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Add Activity</button>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
